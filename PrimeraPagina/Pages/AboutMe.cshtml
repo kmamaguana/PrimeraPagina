@@ -1,0 +1,125 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<!-- Estilos personalizados -->
+<style>
+    body {
+        background: linear-gradient(to right, #ece9e6, #ffffff);
+        font-family: 'Lora', serif; /* Fuente elegante */
+    }
+
+    h1, h3 {
+        font-family: 'Montserrat', sans-serif; /* Fuente moderna para títulos */
+        font-weight: bold;
+    }
+
+    h1 {
+        color: #2980b9;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para el título */
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    p, li {
+        font-size: 1.2em;
+        color: #34495e;
+    }
+
+    ul {
+        line-height: 1.8;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: #3498db;
+        border-color: #2980b9;
+        font-weight: bold;
+    }
+
+    .btn-outline-secondary {
+        border-color: #9b59b6;
+        color: #9b59b6;
+        font-weight: bold;
+    }
+
+    .img-fluid {
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .lead {
+        font-size: 1.4em;
+        font-style: italic;
+        color: #7f8c8d;
+    }
+
+    /* Animación en botones */
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+</style>
+
+<!-- Contenido de la página -->
+<div class="container mt-5">
+    <!-- Tarjeta de presentación principal centrada en la pantalla -->
+    <div class="card shadow-lg p-5 text-center" style="width: 100%; margin: auto; border-radius: 15px;">
+        <!-- Contenedor con dos columnas -->
+        <div class="row">
+            <!-- Columna de la imagen -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="~/images/progra1.gif" alt="Imagen del proyecto"
+                     class="img-fluid rounded"
+                     style="height: auto; object-fit: cover;">
+            </div>
+
+            <!-- Columna de la información -->
+            <div class="col-md-6">
+                <!-- Encabezado principal -->
+                <h1 class="display-4 mb-3">Bienvenido a mi Proyecto</h1>
+                <p class="lead">
+                    Este proyecto explora los conceptos de **contenedores Docker** y **Serverless** (sin servidor),
+                    implementando soluciones distribuidas utilizando múltiples lenguajes de programación y tecnologías modernas.
+                </p>
+
+                <!-- Descripción de las funcionalidades principales -->
+                <h3>Descripción del Proyecto</h3>
+                <ul class="list-unstyled" style="text-align: left;">
+                    <li><i class="bi bi-box" style="color: #3498db;"></i> <strong>Contenedores Docker:</strong> Creación de proyectos utilizando Docker con diversos lenguajes de programación.</li>
+                    <li><i class="bi bi-cloud-upload" style="color: #2ecc71;"></i> <strong>Imágenes Docker:</strong> Generación y subida de imágenes Docker a GitHub y Docker Hub.</li>
+                    <li><i class="bi bi-git" style="color: #e74c3c;"></i> <strong>Repositorios en GitHub:</strong> El código fuente está disponible en repositorios públicos con documentación en Markdown.</li>
+                    <li><i class="bi bi-cloud" style="color: #9b59b6;"></i> <strong>Despliegue Serverless:</strong> Despliegue de proyectos en plataformas como Heroku, DigitalOcean, Railway, entre otras.</li>
+                </ul>
+
+                <!-- Botón para aprender más o acceder a la documentación -->
+                <div class="mt-4">
+                    <a href="/" class="btn btn-primary btn-lg" style="margin-right: 5px;">
+                        <i class="bi bi-book"></i> Leer Documentación
+                    </a>
+                    <a href="/" class="btn btn-outline-secondary btn-lg">
+                        <i class="bi bi-info-circle"></i> Más sobre el Proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

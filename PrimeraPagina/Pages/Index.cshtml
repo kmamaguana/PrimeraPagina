@@ -1,10 +1,49 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Página de Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Soft background for the page -->
+<style>
+    body {
+        background: linear-gradient(to right, #ece9e6, #ffffff);
+    }
+</style>
+
+<div class="container mt-5">
+    <!-- Main presentation card centered on the screen -->
+    <div class="card shadow-lg p-5 text-center" style="max-width: 600px; margin: auto; border-radius: 15px;">
+        <!-- Main header -->
+        <h1 class="display-4 mb-3" style="color: #2c3e50;">Hello! I'm Karen</h1>
+        <p class="lead" style="color: #34495e;">
+            Welcome to my page. I am passionate about data analysis and technology.
+        </p>
+
+        <!-- Profile image with rounded border and shadow, centered -->
+        <div class="d-flex justify-content-center">
+            <img src="~/images/michi.gif" alt="Profile image"
+                 class="rounded-circle mt-4 mb-4"
+                 style="width: 150px; height: 150px; object-fit: cover; border: 5px solid #2980b9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+
+        <!-- User information in a list -->
+        <h3 style="color: #2980b9; font-weight: bold;">User Information</h3>
+        <ul class="list-unstyled" style="font-size: 1.1em; color: #34495e;">
+            <li><strong>Name:</strong> Karen</li>
+            <li><strong>City:</strong> Quito, Ecuador</li>
+            <li><strong>Profession:</strong> Student</li>
+            <li><strong>Email:</strong> kmamaguana@uce.edu.ec</li>
+        </ul>
+
+        <!-- Contact buttons (simulating social media) -->
+        <div class="mt-4">
+            <a href="mailto:kmamaguana@uce.edu.ec" class="btn btn-primary btn-sm" style="margin-right: 5px;">
+                <i class="bi bi-envelope-fill"></i> Contact
+            </a>
+            <a href="https://github.com/kmamaguana" class="btn btn-outline-dark btn-sm">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+        </div>
+    </div>
 </div>
